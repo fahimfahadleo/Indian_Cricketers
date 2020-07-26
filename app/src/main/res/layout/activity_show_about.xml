@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowAbout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/nullvalue"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/nullvalue"
+            android:padding="10dp"
+             />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/singleplayerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:contentPadding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/singleplayerimage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ict"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="Mumba Apps"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="Indian Cricketers"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/info"
+                        android:text="Version 1.0.0"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/renew"
+                        android:text="Changelog"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/policy"
+                        android:text="License"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:contentPadding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="Author"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/person"
+                        android:text="Mumba App"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/person"
+                        android:text="Download From Cloud"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:contentPadding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="Company"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/person"
+                        android:text="Mumba App"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/location"
+                        android:text="Kolkata,India"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/email"
+                        android:text="mumbaappfiles@gmail.com"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

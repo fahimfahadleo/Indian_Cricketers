@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".singlePlayer">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/indiancricketteam" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimageview"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ict" />
+
+        <TextView
+            android:id="@+id/playername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileimageview"
+            android:layout_centerHorizontal="true"
+            android:text="Virat koholi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/playercountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playername"
+            android:layout_centerHorizontal="true"
+            android:text="India"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="25dp"
+        app:strokeColor="?attr/colorAccent"
+        app:strokeWidth="2dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="@color/colorPrimaryDark" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

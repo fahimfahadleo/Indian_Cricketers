@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/battingtitle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ashcolor"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="Batting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/battingstyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Batting Style: " />
+
+            <TextView
+                android:id="@+id/battingstylevalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Right-handed"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalmatch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Match: " />
+
+            <TextView
+                android:id="@+id/totalmatchvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="n/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalinngs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Inngs: " />
+
+            <TextView
+                android:id="@+id/totalinngsvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="N/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalruns"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Runs: " />
+
+            <TextView
+                android:id="@+id/totalrunsvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="n/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/ballingtitle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ashcolor"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="Balling"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ballingstyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Balling Style: " />
+
+            <TextView
+                android:id="@+id/ballingstylevalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Right-Arm-medium"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalmatchballs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Match: " />
+
+            <TextView
+                android:id="@+id/totalmatchballsvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="n/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalwicket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Wickets: " />
+
+            <TextView
+                android:id="@+id/totalwicketvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="N/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalrunsballs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="Total Runs: " />
+
+            <TextView
+                android:id="@+id/totalrunsballsvalue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="start|center"
+                android:padding="8dp"
+                android:text="n/a"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ashcolor"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="Team"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/teamvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:padding="8dp"
+            android:text="N/a"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/singleplayerview"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/singleplayerimage"
+                android:layout_width="85dp"
+                android:layout_gravity="center"
+                android:layout_height="85dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/cricketteam"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:background="@drawable/textviewshape"
+                android:id="@+id/singleplayername"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

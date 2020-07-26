@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:text="Choose Language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/languagechooserdialogue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/buttonBarStyle"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/buttonshape"
+            android:text="English"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_marginEnd="8dp"
+            android:textColor="#fff"
+            android:id="@+id/englishbutton"/>
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/buttonshape"
+            android:text="বাংলা"
+            android:layout_marginStart="8dp"
+            style="?attr/buttonBarButtonStyle"
+            android:textColor="#fff"
+            android:id="@+id/banglabutton"/>
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>
