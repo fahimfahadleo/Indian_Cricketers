@@ -28,6 +28,7 @@ public class ShowAllApps extends AppCompatActivity {
             titletext.setText("More Apps");
         }else {
             titletext.setText("অন্যান্য অ্যাপ");
+            
         }
     }
 }
